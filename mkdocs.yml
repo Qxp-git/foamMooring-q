@@ -1,0 +1,62 @@
+site_name: foamMooring
+site_url: https://hfchen20.gitlab.io/foamMooring
+repo_url: https://gitlab.com/hfchen20/foamMooring
+copyright: Copyright &copy; 2023 - 2024 Haifei Chen
+plugins:
+  - search
+theme:
+  #name: readthedocs
+  name: material
+  features:
+    - header.autohide
+    - search.suggest
+    - search.highlight
+    #- navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Gallery: gallery.md
+  - Mesh motion: mesh_motion.md
+  - sixDoFMooring: six-dof-mooring.md
+  - rigidBodyMooring: rgb-mooring.md
+  - Utilities: utilities.md
+  - References: references.md
+extra:
+  analytics:
+    provider: google
+    property: G-6E841MLKH9
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/hfchen20
+    - icon: fontawesome/brands/github
+      link: https://github.com/hfchen20
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
